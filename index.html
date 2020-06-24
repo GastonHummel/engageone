@@ -5,33 +5,90 @@
     <title>EngageOne</title>
     <base href="/en-US/" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="assets/favicon/precisely16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="assets/favicon/precisely32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="assets/favicon/precisely57.png" sizes="57x57" />
-    <link rel="icon" type="image/png" href="assets/favicon/precisely72.png" sizes="72x72" />
-    <link rel="icon" type="image/png" href="assets/favicon/precisely114.png" sizes="114x114" />
-    <link rel="icon" type="image/png" href="assets/favicon/precisely144.png" sizes="144x144" />
-    <link rel="icon" type="image/png" href="assets/favicon/favicon_128.png" sizes="128x128" />
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/precisely57.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/precisely72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/precisely114.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/precisely144.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon/precisely16.png"
+      sizes="16x16"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon/precisely32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon/precisely57.png"
+      sizes="57x57"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon/precisely72.png"
+      sizes="72x72"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon/precisely114.png"
+      sizes="114x114"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon/precisely144.png"
+      sizes="144x144"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/favicon/favicon_128.png"
+      sizes="128x128"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="assets/favicon/precisely57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/favicon/precisely72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="assets/favicon/precisely114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/favicon/precisely144.png"
+    />
     <link rel="mask-icon" href="assets/favicon/precisely.ico" color="#314183" />
   </head>
 
   <body>
     <script>
-      const base = 'https://engageone.dcsdemo.nl';
+      const base = "https://engageone.dcsdemo.nl";
       // const base = 'http://localhost:3000';
       const path = window.location.pathname;
       const language = window.navigator.language.slice(0, 2);
       console.log(`path: ${path}`);
       console.log(`language: ${language}`);
 
-      if (language === 'de') {
+      if (language === "de") {
         window.location.href = `${base}/de`;
-      } else if (language === 'fr') {
+      } else if (language === "es") {
+        window.location.href = `${base}/es`;
+      } else if (language === "fr") {
         window.location.href = `${base}/fr`;
+      } else if (language === "it") {
+        window.location.href = `${base}/it`;
+      } else if (language === "pt") {
+        window.location.href = `${base}/pt`;
       } else {
         window.location.href = `${base}/en-US`;
       }
