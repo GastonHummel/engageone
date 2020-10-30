@@ -42,7 +42,7 @@
 
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"
+      content="width=device-width,height=device-height,initial-scale=1.0"
     />
     <link rel="stylesheet" href="converse-chat.css" />
     <link
@@ -56,18 +56,24 @@
       type="text/css"
       href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
-    <script src="https://designerui.converse.pitneybowes.com/webchat/v3.1/converse-chat.js"></script>
+    <script src="https://webchat-converse-snd-iad.ces.engageonechat.com/js/converse-chat.js"></script>
+    <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.min.js"></script>
   </head>
   <script type="text/javascript">
     $(function () {
       var options = {
-        placeholder: "Tapez un message...",
+        placeholder: "Entrez le texte ici...",
         host: "https://webchat-converse-snd-iad.ces.engageonechat.com",
         converseHost: "https://converse.ces.engageonechat.com",
         serverUserImage:
@@ -80,9 +86,9 @@
         tenant: "sa9d798",
         botId: "8db817b0-1a9a-11eb-a293-ad4606f05ed1",
         title: "À propos de nous",
-        placeholder: "Entrez le texte ici...",
         disabledPlaceholder: "Sélectionnez l'une des options...",
         sendButtonTitle: "Envoyer",
+        startPhrase: "start",
         hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
         user: {
           id: "TT00001",
@@ -93,7 +99,7 @@
       };
 
       var webClient = ConverseWebClient.init(options);
-      webClient.sendPostBackSilent("start");
+      // webClient.sendPostBackSilent("start");
       webClient.show();
     });
   </script>
