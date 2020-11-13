@@ -4,7 +4,7 @@
     <style type="text/css">
       html {
         height: 100%;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 14px;
       }
       body {
@@ -40,7 +40,10 @@
       }
     </style>
 
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1.0"
+    />
     <link rel="stylesheet" href="converse-chat.css" />
     <link
       rel="stylesheet"
@@ -48,10 +51,21 @@
       integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.1.0/socket.io.js"></script>
     <script src="https://webchat-converse-snd-iad.ces.engageonechat.com/js/converse-chat.js"></script>
     <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.min.js"></script>
@@ -59,27 +73,28 @@
   <script type="text/javascript">
     $(function () {
       var options = {
-        placeholder: 'Geben Sie eine Nachricht ein...',
-        host: 'https://webchat-converse-snd-iad.ces.engageonechat.com',
-        converseHost: 'https://converse.ces.engageonechat.com',
-        serverUserImage: 'https://converseui.ces.engageonechat.com/public/img/eo-square-mark.png',
-        container: '#chatcontainer',
+        placeholder: "Geben Sie eine Nachricht ein...",
+        host: "https://webchat-converse-snd-iad.ces.engageonechat.com",
+        converseHost: "https://converse.ces.engageonechat.com",
+        serverUserImage:
+          "https://converseui.ces.engageonechat.com/public/img/eo-square-mark.png",
+        container: "#chatcontainer",
         showCloseButton: false,
         showSettingsButton: false,
         showToolbar: true,
         allowHTML: true,
-        tenant: 'sa9d798',
-        botId: '84b3e59f-6903-41fa-9cc3-fc51459e5e02',
-        title: 'Über uns',
-        startPhrase: 'start',
-        disabledPlaceholder: 'Wählen Sie eine der Optionen...',
-        sendButtonTitle: 'Senden',
-        hideIcon: 'fa-times', // See: https://fontawesome.com/icons?d=gallery&m=free
+        tenant: "sa9d798",
+        botId: "62bff6a0-2593-11eb-8a80-ad0b0d633493",
+        title: "Über uns",
+        startPhrase: "start",
+        disabledPlaceholder: "Wählen Sie eine der Optionen...",
+        sendButtonTitle: "Senden",
+        hideIcon: "fa-times", // See: https://fontawesome.com/icons?d=gallery&m=free
         user: {
-          id: 'TT00001',
-          first_name: 'Chris',
-          last_name: 'Cummings',
-          full_name: 'Chris Cummings',
+          id: "TT00001",
+          first_name: "Chris",
+          last_name: "Cummings",
+          full_name: "Chris Cummings",
         },
       };
 
